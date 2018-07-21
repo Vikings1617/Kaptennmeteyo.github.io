@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kaptenn meteyo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <br>
+    <h1 class="text-center">Kaptenn Meteyo</h1>
+    <div class="container">
+
+
+        <fieldset>
+            <form action="/" method="post">
+                <input name="city" type="text" class="ghost-input" placeholder="Antre yon vil" required>
+                <input type="submit" class="ghost-button" value="Konenn ki tan li fè">
+            </form>
+            <% if(weather !== null){ %>
+                <p>
+                    <%= weather %>
+                </p>
+                <% } %>
+
+                    <% if(error !== null){ %>
+                        <p>
+                            <%= error %>
+                        </p>
+                        <% } %>
+        </fieldset>
+    </div>
+</body>
+
+</html>
